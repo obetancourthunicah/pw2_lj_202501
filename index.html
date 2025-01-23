@@ -50,7 +50,137 @@
             </section>
             <section id="segundo_parcial">
                 <h2>Precompiladores y Plantilleros</h2>
+                <table>
+                    <tr>
+                        <th>Encabezado T 1</th>
+                        <th>Encabezado T 2</th>
+                        <th>Encabezado T 3</th>
+                        <th>Encabezado T 4</th>
+                        <th>Encabezado T 5</th>
+                    </tr>
+                    <tr>
+                        <td>Data 1.1</td>
+                        <td>Data 1.2</td>
+                        <td>Data 1.3</td>
+                        <td>Data 1.4</td>
+                        <td>Data 1.5</td>
+                    </tr>
+                    <tr>
+                        <td>Data 2.1</td>
+                        <td>Data 2.2</td>
+                        <td>Data 2.3</td>
+                        <td>Data 2.4</td>
+                        <td>Data 2.5</td>
+                    </tr>
+                </table>
+                <hr/>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th colspan="6">Título de la Tabla</th>
+                        </tr>
+                        <tr>
+                            <th>Zona</th>
+                            <th>Departamento</th>
+                            <th>Q1</th>
+                            <th>Q2</th>
+                            <th>Q3</th>
+                            <th>Q4</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="3">Norte</td>
+                            <td>Atlantida</td>
+                            <td>10</td>
+                            <td>15</td>
+                            <td>10</td>
+                            <td>40</td>
+                        </tr>
+                        <tr>
+                            
+                            <td>Colón</td>
+                            <td>7</td>
+                            <td>13</td>
+                            <td>14</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            
+                            <td>Cortés</td>
+                            <td>17</td>
+                            <td>24</td>
+                            <td>25</td>
+                            <td>23</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="6">Extraido de Fuentes Guerrero 2025 en lapagina.com</td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <hr/>
+                <h3>Formularios</h3>
 
+                <form action="#" method="post">
+                    <h3>Formulario de Inscripción</h3>
+                    <label for="txtNombre">Nombre: </label>
+                    <input name="txtNombre" id="txtNombre" type="text"
+                        placeholder="Primer Nombre y Primer Apellido"
+                    />
+                    <br/>
+                    <label for="txtEdad">Edad: </label>
+                    <input name="txtEdad" id="txtEdad" type="number"
+                    placeholder="21-100 años"
+                    />
+                    <br/>
+                    <label for="txtEmail">Correo: </label>
+                    <input name="txtEmail" id="txtEmail" type="text"
+                    placeholder="correo@corporativo.com"
+                    />
+
+                    <fieldset>
+                        <legend>Preferencias</legend>
+                        <label>Color</label><br/>
+                        <input type="radio" value="red" name="rdbColor" id="rdbColorRed"/>
+                        <label for="rdbColorRed">Rojo</label>&nbsp;
+                        <input type="radio" value="blue" name="rdbColor" id="rdbColorBlue"/>
+                        <label for="rdbColorBlue">Azul</label>&nbsp;
+                        <input type="radio" value="yellow" name="rdbColor" id="rdbColorYellow"/>
+                        <label for="rdbColorYellow">Amarillo</label>&nbsp;
+                        <input type="radio" value="green" name="rdbColor" id="rdbColorGreen"/>
+                        <label for="rdbColorGreen">Verde</label>&nbsp;
+                        <br/>
+                        <label>Gradiales</label><br/>
+                        <input type="checkbox" value="red" name="chkColorRed" id="chkColorRed"/>
+                        <label for="chkColorRed">Rojo</label>&nbsp;
+                        <input type="checkbox" value="blue" name="chkColorBlue" id="chkColorBlue"/>
+                        <label for="chkColorBlue">Azul</label>&nbsp;
+                        <input type="checkbox" value="yellow" name="chkColorYellow" id="chkColorYellow"/>
+                        <label for="chkColorYellow">Amarillo</label>&nbsp;
+                        <input type="checkbox" value="green" name="chkColorGreen" id="chkColorGreen"/>
+                        <label for="chkColorGreen">Verde</label>&nbsp;
+                    </fieldset>
+                    <br/>
+                    <label for="cmbPais">Pais de Origen</label>
+                    <select id="cmbPais" name="cmbPais">
+                        <option value="">Seleccion un país</option>
+                        <option value="HN">Honduras</option>
+                        <option value="ES">El Salvador</option>
+                        <option value="AR">Argentina</option>
+                        <option value="GR">Alemania</option>
+                    </select>
+                    <br/>
+                    <label for="txtBio">Biografía</label><br/>
+                    <textarea id="txtBio" name="" row="10" col="80"
+                    placeholder="Un corta descripción de su vida."
+                    ></textarea>
+                    <br/>
+                    <button type="submit" name="btnEnviar">Enviar</button>
+                    &nbsp;
+                    <button type="reset">Limpiar datos</button>
+                </form>
             </section>
             <section id="tercer_parcial">
                 <h2>Web Components y uso de Rest API para páginas Dinámicas</h2>
