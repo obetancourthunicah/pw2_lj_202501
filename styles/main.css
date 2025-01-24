@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    padding:0px;
+    margin:0px;
+}
+/*
+content
+padding
+border
+margin
+
+trbl -> problema -> trouble
+top right button left
+
+*/
+
+header{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    color:#fff;
+}
+
+header h1{
+    margin:0px;
+    padding:0px 1rem;
+    font-size: 1.5rem;
+}
+header nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 0.8rem;
+    padding:0px;
+    margin:0px;
+    list-style: none;
+    align-items: center;
+}
+header nav ul li a {
+    color:#fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.7rem 0.9rem;
+}
