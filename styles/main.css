@@ -6,6 +6,10 @@ body{
     padding:0px;
     margin:0px;
 }
+
+img {
+    max-width:100%;
+}
 /*
 content
 padding
@@ -24,6 +28,7 @@ header{
     align-items: center;
     background-color: #000;
     color:#fff;
+    overflow: hidden;
 }
 
 header h1{
@@ -45,4 +50,61 @@ header nav ul li a {
     text-decoration: none;
     display: inline-block;
     padding: 0.7rem 0.9rem;
+}
+
+.hero {
+    position:relative;
+}
+.hero img{
+    width:100%;
+    height: 680px;
+    object-fit: cover;
+}
+
+.hero .hero-title, .hero .hero-badge {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color:#000;
+    text-shadow: 1px 1px 3px #000;
+    font-size: 2rem;
+    padding: 2.5rem 1rem;
+    background-color: #fff;
+    transform: translate(-50%,-50%);
+}
+
+.hero .hero-badge {
+    background-color: #0f8902;
+    z-index: 999;
+    font-size: 2rem;
+    box-shadow: 3px 3px 5px #074000;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.hero .top-right {
+    top: 25%;
+    left: 75%;
+}
+
+.table-container {
+    max-width:100%;
+    overflow: scroll;
+}
+
+.f-table tr th{
+    border-top: 1px solid #777;
+    border-bottom: 1px solid #777;
+}
+
+.f-table tr td{
+    border-bottom: 1px solid #777;
+}
+
+.f-table tr:nth-child(2n){
+    background-color: #ccc;
 }
