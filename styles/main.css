@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -5,6 +7,7 @@
 body{
     padding:0px;
     margin:0px;
+    font-family: 'Roboto', 'Arial', sans-serif;
 }
 
 img {
@@ -20,6 +23,12 @@ trbl -> problema -> trouble
 top right button left
 
 */
+
+.container {
+    padding:0.5rem;
+}
+
+
 
 header{
     display:flex;
@@ -107,4 +116,213 @@ header nav ul li a {
 
 .f-table tr:nth-child(2n){
     background-color: #ccc;
+}
+
+
+.card-holder {
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.card-holder .card {
+    width: 300px;
+    border: 1px solid #000;
+    box-shadow: 3px 3px 5px #000;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    min-height: 380px;
+}
+.card .card-header strong {
+    display: block;
+    text-align: center;
+    padding:1rem 0.5rem;
+    border-bottom: 2px solid #333;
+}
+
+.card .card-header img {
+    width:100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card .card-content {
+    flex: 1 0;
+    padding:0.75rem;
+    line-height: 1.25;
+}
+
+.card .card-footer {
+    display: flex;
+    padding:0.75rem;
+}
+
+.card .card-footer button {
+    border: 1px solid #573829;
+    box-shadow: 1px 1px 10px #a47864;
+    background-color: #a47864;
+    color: #fff;
+    padding: 0.75rem 1rem;
+    border-radius: 3px;
+}
+
+.card .card-footer button.center {
+    margin: 0px auto;
+}
+
+.card .card-footer button.right {
+    margin-left:auto;
+}
+
+.card .card-footer button.stretch {
+    width:100%;
+}
+
+
+.gridlayout {
+    display: flex;
+    flex-direction: column;
+}
+
+.gridlayout .row {
+    flex: 1;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.form {
+    max-width:640px;
+    margin:0px auto;
+}
+
+.gridlayout .row [class*='col-']{
+    display:flex;
+    flex: 0 0;
+}
+
+.gridlayout .row .col-1 {
+    flex-basis: calc(100% / 12);
+}
+.gridlayout .row .col-2 {
+    flex-basis: calc(100% / 12 * 2);
+}
+.gridlayout .row .col-3 {
+    flex-basis: calc(100% / 12 * 3);
+}
+.gridlayout .row .col-4 {
+    flex-basis: calc(100% / 12 * 4);
+}
+.gridlayout .row .col-5 {
+    flex-basis: calc(100% / 12 * 5);
+}
+.gridlayout .row .col-6 {
+    flex-basis: calc(100% / 12 * 6);
+}
+.gridlayout .row .col-7 {
+    flex-basis: calc(100% / 12 * 7);
+}
+.gridlayout .row .col-8 {
+    flex-basis: calc(100% / 12 * 8);
+}
+.gridlayout .row .col-9 {
+    flex-basis: calc(100% / 12 * 9);
+}
+.gridlayout .row .col-10 {
+    flex-basis: calc(100% / 12 * 10);
+}
+.gridlayout .row .col-11 {
+    flex-basis: calc(100% / 12 * 11);
+}
+.gridlayout .row .col-12 {
+    flex-basis: 100%;
+}
+
+@media (min-width:481px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .gridlayout .row .col-m-1 {
+        flex-basis: calc(100% / 12);
+    }
+    .gridlayout .row .col-m-2 {
+        flex-basis: calc(100% / 12 * 2);
+    }
+    .gridlayout .row .col-m-3 {
+        flex-basis: calc(100% / 12 * 3);
+    }
+    .gridlayout .row .col-m-4 {
+        flex-basis: calc(100% / 12 * 4);
+    }
+    .gridlayout .row .col-m-5 {
+        flex-basis: calc(100% / 12 * 5);
+    }
+    .gridlayout .row .col-m-6 {
+        flex-basis: calc(100% / 12 * 6);
+    }
+    .gridlayout .row .col-m-7 {
+        flex-basis: calc(100% / 12 * 7);
+    }
+    .gridlayout .row .col-m-8 {
+        flex-basis: calc(100% / 12 * 8);
+    }
+    .gridlayout .row .col-m-9 {
+        flex-basis: calc(100% / 12 * 9);
+    }
+    .gridlayout .row .col-m-10 {
+        flex-basis: calc(100% / 12 * 10);
+    }
+    .gridlayout .row .col-m-11 {
+        flex-basis: calc(100% / 12 * 11);
+    }
+    .gridlayout .row .col-m-12 {
+        flex-basis: 100%;
+    }
+}
+
+@media (min-width: 1025px) {
+    .container {
+        margin: 0px auto;
+        max-width: 1200px;
+    }
+
+    .gridlayout .row .col-l-1 {
+        flex-basis: calc(100% / 12);
+    }
+    .gridlayout .row .col-l-2 {
+        flex-basis: calc(100% / 12 * 2);
+    }
+    .gridlayout .row .col-l-3 {
+        flex-basis: calc(100% / 12 * 3);
+    }
+    .gridlayout .row .col-l-4 {
+        flex-basis: calc(100% / 12 * 4);
+    }
+    .gridlayout .row .col-l-5 {
+        flex-basis: calc(100% / 12 * 5);
+    }
+    .gridlayout .row .col-l-6 {
+        flex-basis: calc(100% / 12 * 6);
+    }
+    .gridlayout .row .col-l-7 {
+        flex-basis: calc(100% / 12 * 7);
+    }
+    .gridlayout .row .col-l-8 {
+        flex-basis: calc(100% / 12 * 8);
+    }
+    .gridlayout .row .col-l-9 {
+        flex-basis: calc(100% / 12 * 9);
+    }
+    .gridlayout .row .col-l-10 {
+        flex-basis: calc(100% / 12 * 10);
+    }
+    .gridlayout .row .col-l-11 {
+        flex-basis: calc(100% / 12 * 11);
+    }
+    .gridlayout .row .col-l-12 {
+        flex-basis: 100%;
+    }
 }
