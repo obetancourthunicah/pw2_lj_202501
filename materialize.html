@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materialize Demo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems, {});
+
+            var carElems = document.querySelectorAll('.carousel');
+            var carouselInstances = M.Carousel.init(carElems, {});
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#!" class="brand-logo">Logo</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="sass.html">Sass</a></li>
+                    <li><a href="badges.html">Components</a></li>
+                    <li><a href="collapsible.html">Javascript</a></li>
+                    <li><a href="mobile.html">Mobile</a></li>
+                </ul>
+            </div>
+        </nav>
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="sass.html">Sass</a></li>
+            <li><a href="badges.html">Components</a></li>
+            <li><a href="collapsible.html">Javascript</a></li>
+            <li><a href="mobile.html">Mobile</a></li>
+        </ul>
+    </header>
+    <main>
+        <div class="carousel">
+            <a class="carousel-item" href="#one!">
+                <picture>
+                    <source srcset="https://picsum.photos/id/100/720/480" media="(min-width: 1200px)">
+                    <source srcset="https://picsum.photos/id/100/480/300" media="(min-width: 760px)">
+                    <img src="https://picsum.photos/id/100/250/250" alt="Car 1">
+                </picture>
+            </a>
+            <a class="carousel-item" href="#two!">
+                <picture>
+                    <source srcset="https://picsum.photos/id/101/720/480" media="(min-width: 1200px)">
+                    <source srcset="https://picsum.photos/id/101/480/300" media="(min-width: 760px)">
+                    <img src="https://picsum.photos/id/101/250/250" alt="Car 1">
+                </picture>
+            </a>
+            <a class="carousel-item" href="#three!">
+                <picture>
+                    <source srcset="https://picsum.photos/id/102/720/480" media="(min-width: 1200px)">
+                    <source srcset="https://picsum.photos/id/102/480/300" media="(min-width: 760px)">
+                    <img src="https://picsum.photos/id/102/250/250" alt="Car 1">
+                </picture>
+            </a>
+            <a class="carousel-item" href="#four!">
+                <picture>
+                    <source srcset="https://picsum.photos/id/103/720/480" media="(min-width: 1200px)">
+                    <source srcset="https://picsum.photos/id/103/480/300" media="(min-width: 760px)">
+                    <img src="https://picsum.photos/id/103/250/250" alt="Car 1">
+                </picture>
+            </a>
+            <a class="carousel-item" href="#five!">
+                <picture>
+                    <source srcset="https://picsum.photos/id/104/720/480" media="(min-width: 1200px)">
+                    <source srcset="https://picsum.photos/id/104/480/300" media="(min-width: 760px)">
+                    <img src="https://picsum.photos/id/104/250/250" alt="Car 1">
+                </picture>
+            </a>
+        </div>
+        <section class="container">
+            <div style="margin-top:1rem;">
+                <div class="row">
+                    <div class="col s12 m4">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="https://picsum.photos/id/201/300/280">
+                                <span class="card-title">Card Title</span>
+                            </div>
+                            <div class="card-content">
+                                <p>I am a very simple card. I am good at containing small bits of information.
+                                    I am convenient because I require little markup to use effectively.</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="#">This is a link</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m4">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="https://picsum.photos/id/202/300/280">
+                                <span class="card-title">Card Title</span>
+                            </div>
+                            <div class="card-content">
+                                <p>I am a very simple card. I am good at containing small bits of information.
+                                    I am convenient because I require little markup to use effectively.</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="#">This is a link</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m4">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="https://picsum.photos/id/203/300/280">
+                                <span class="card-title">Card Title</span>
+                            </div>
+                            <div class="card-content">
+                                <p>I am a very simple card. I am good at containing small bits of information.
+                                    I am convenient because I require little markup to use effectively.</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="#">This is a link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-top:1rem;">
+                <div class="row">
+                    <div class="col s12 m6" style="flex:1 0 100%;display:flex; justify-content: center; align-items: center; flex-direction: column;">
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quos vitae nesciunt, sed nobis magni quidem asperiores distinctio sequi impedit. Mollitia velit porro ab cupiditate? Id, maiores tempora! Qui, esse.
+                        </p>
+                        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet quibusdam ratione ut? Suscipit fuga dolorum error rem reprehenderit a architecto quidem libero illum facilis animi, labore odit quo. Adipisci, accusantium.</p>
+                    </div>
+                    <div class="col s12 m6">
+                        <picture>
+                            <source srcset="https://picsum.photos/id/101/720/720" media="(min-width: 760px)">
+                            <img  style="width:100%;height:100%;object-fit:cover" src="https://picsum.photos/id/101/480/480" alt="Car 1">
+                        </picture>
+                    </div>
+            </div>
+        </section>
+    </main>
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Footer Content</h5>
+                    <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer
+                        content.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2014 Copyright Text
+                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
